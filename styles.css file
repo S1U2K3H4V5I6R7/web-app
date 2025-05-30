@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+  min-height: 100vh;
+}
+
+/* Header */
+.app-header {
+  grid-area: header;
+  background-color: #0a84ff;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Sidebar */
+.app-sidebar {
+  grid-area: sidebar;
+  background-color: #1e1e2f;
+  color: white;
+  padding: 1rem;
+}
+
+.app-sidebar nav ul {
+  list-style: none;
+}
+
+.app-sidebar nav ul li {
+  margin: 1rem 0;
+}
+
+.app-sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  display: block;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.app-sidebar nav ul li a:hover {
+  background-color: #33334d;
+}
+
+/* Main */
+.app-main {
+  grid-area: main;
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+/* Card style */
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+}
+
+.stats {
+  list-style: none;
+  padding: 0;
+}
+
+.stats li {
+  margin: 0.5rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px auto auto;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main";
+  }
+
+  .app-sidebar {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+  }
+
+  .app-sidebar nav ul {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+  }
+
+  .app-sidebar nav ul li {
+    margin: 0;
+  }
+}
+
