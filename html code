@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Web App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1>WebApp Dashboard</h1>
+    </header>
+
+    <aside class="app-sidebar">
+      <nav>
+        <ul>
+          <li><a href="#">🏠 Dashboard</a></li>
+          <li><a href="#">📊 Analytics</a></li>
+          <li><a href="#">⚙️ Settings</a></li>
+          <li><a href="#">🔒 Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="app-main">
+      <section class="card">
+        <h2>Welcome to the Web App</h2>
+        <p>This is a clean, responsive, and professional layout for your web application.</p>
+      </section>
+      <section class="card">
+        <h2>Quick Stats</h2>
+        <ul class="stats">
+          <li><strong>Users:</strong> 1,204</li>
+          <li><strong>Sessions:</strong> 3,581</li>
+          <li><strong>Bounce Rate:</strong> 24%</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
+
